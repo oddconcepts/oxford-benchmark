@@ -28,7 +28,7 @@ def load_list(fname: str):
 
     return [e.strip() for e in open(fname, 'r').readlines()]
 
-def compute_ap(pos: List[str], amb: List[str] = [], ranked_list: List[str]):
+def compute_ap(pos: List[str], amb: List[str], ranked_list: List[str]):
     """Compute average precision against a retrieved list of images. There are some bits that
     could be improved in this, but is a line-to-line port of the original C++ benchmark code.
 
